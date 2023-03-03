@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link href="index.css" rel="stylesheet"> 
+</head>
+<body>
+    <!-- Build UI -->
+    <h1>Tic Tac Toe</h1><br>
+    <button>Click to show/hide the Game Instructions.</button> 
+    <br>  
+    <div id="rules-text">
+            <p>Instructions</p>    
+            <p>Player names are PlayerX and PlayerO. When the cursor hovers over a cell the marker will indicate
+                whose turn it is, X or O. PlayerX goes first. The first player to win a row is the winner. If all cells of the grid are filled with no matching rows then the game is a draw, no winner. Rows are across (3 rows), down (3 rows), diagonal (2 rows).</p>
+    </div>
+    <br>
+        <div id="board">
+        <div data-index="1" class="cell right-border bottom-border"></div>
+        <div data-index="2" class="cell right-border bottom-border"></div>
+        <div data-index="3" class="cell bottom-border"></div>
+        <div data-index="4" class="cell right-border bottom-border"></div>
+        <div data-index="5" class="cell right-border bottom-border"></div>
+        <div data-index="6" class="cell bottom-border"></div>
+        <div data-index="7" class="cell right-border"></div>
+        <div data-index="8" class="cell right-border"></div>
+        <div data-index="9" class="cell"></div>
+
+        <div id="strike" class="strike"></div>
+    </div>
+        <div id="game-over-area" class="hidden">
+        <h2 id="game-over-text">Winner is X</h2>
+        <button id="play-again">Play Again</button>
+    </div>
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="game.js"></script> 
+</body>
+</html>
